@@ -7,7 +7,7 @@ test_that("acti_map_nhanes_pa_quantiles delegates to mapnhanespa", {
     value = c(15000, 7500)
   )
 
-  wrapped <- acti_map_nhanes_pa_quantiles(data)
+  wrapped <- acti_map_nhanes(data)
   direct <- mapnhanespa::map_nhanes_pa_quantiles(
     data,
     quantile_col = "acti_pa_quantile"

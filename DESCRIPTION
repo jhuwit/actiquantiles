@@ -18,11 +18,11 @@ Suggests:
     testthat,
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    dplyr
 Encoding: UTF-8
 VignetteBuilder: knitr
 Imports: 
-    assertthat,
     magrittr,
     mapnhanespa
 Remotes: 
