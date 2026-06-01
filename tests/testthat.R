@@ -1,5 +1,5 @@
 library(testthat)
-library(actisensorlog)
+library(actiquantiles)
 
 
-test_check("actisensorlog")
+test_check("actiquantiles")

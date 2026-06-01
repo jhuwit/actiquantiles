@@ -2,7 +2,7 @@
 % Please edit documentation in R/map-nhanes.R
 \name{acti_map_nhanes}
 \alias{acti_map_nhanes}
-\title{Map physical activity values to NHANES quantiles}
+\title{Map physical activity values to NHANES population quantiles}
 \usage{
 acti_map_nhanes(
   data,
@@ -22,28 +22,29 @@ acti_map_nhanes(
 \item{id}{Optional participant identifier column name. The column is checked
 when supplied, but otherwise left unchanged.}
 
-\item{age, sex, measure, value}{Column names in `data` containing age in years,
-sex/gender, physical activity measure, and observed value. Set `age = NULL`
-to use the age-overall CDFs. Set `sex = NULL` to use the sex/gender-overall
-CDFs. Setting both to `NULL` uses the overall CDF across both dimensions.}
+\item{age, sex, measure, value}{Column names in \code{data} containing age in years,
+sex/gender, physical activity measure, and observed value. Set \code{age = NULL}
+to use the age-overall CDFs. Set \code{sex = NULL} to use the sex/gender-overall
+CDFs. Setting both to \code{NULL} uses the overall CDF across both dimensions.}
 
-\item{wave}{Optional NHANES wave column name or scalar value. Supported
-values are `7`, `8`, `"2011-2012"`, and `"2013-2014"`. If `NULL`, the
-combined wave CDFs are used.}
+\item{wave}{Optional NHANES wave column name or scalar value. Supported values
+are \code{7}, \code{8}, \code{"2011-2012"}, and \code{"2013-2014"}. If \code{NULL}, the combined
+wave CDFs are used.}
 
 \item{age_category}{Optional column name containing NHANES age categories
-such as `"[20,30)"` or `"Overall"`. When supplied, it is used instead of
-`age`.}
+such as \code{"[20,30)"} or \code{"Overall"}. When supplied, it is used instead of
+\code{age}.}
 
 \item{quantile_col}{Name of the output quantile column.}
 }
 \value{
-`data` with an added quantile column.
+\code{data} with an added quantile column.
 }
 \description{
-`acti_map_nhanes_pa_quantiles()` is a thin wrapper around
-[mapnhanespa::map_nhanes_pa_quantiles()] that keeps the package's `acti_`
-prefix while returning a standardized quantile column name.
+\code{map_nhanes_pa_quantiles()} adds a population-level quantile column to a
+participant-level data frame. Quantiles are evaluated from NHANES
+accelerometer cumulative distribution functions stratified by age category,
+sex/gender, measure, and optionally survey wave.
 }
 \examples{
 example_data <- data.frame(
