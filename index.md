@@ -8,7 +8,7 @@ later.
 
 Core entry points:
 
-- [`acti_map_nhanes()`](http://jhuwit.github.io/actiquantiles/reference/acti_map_nhanes.md)
+- [`acti_map_nhanes()`](https://jhuwit.github.io/actiquantiles/reference/acti_map_nhanes.md)
   for participant-level quantile mapping
 - [`mapnhanespa::nhanes_pa_quantile()`](https://rdrr.io/pkg/mapnhanespa/man/nhanes_pa_quantile.html)
   for a single value lookup
