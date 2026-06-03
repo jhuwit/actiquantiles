@@ -29,5 +29,5 @@ Remotes:
   jhuwit/mapnhanespa
 LazyData: true
 Config/roxygen2/version: 8.0.0
-URL: https://github.com/jhuwit/actiquantiles
+URL: https://github.com/jhuwit/actiquantiles, https://jhuwit.github.io/actiquantiles/
 BugReports: https://github.com/jhuwit/actiquantiles/issues
