@@ -10,7 +10,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-6469-1750"))
     )
 Description: Provides functions mapping physical activity measures to 
-    normalized quantiles.
+    normalized quantiles. Currently, only maps the 'NHANES' quantiles, but
+    other quantiles will be integrated.
 License: GPL-3
 Depends: 
     R (>= 3.5)
@@ -23,10 +24,7 @@ Suggests:
 Encoding: UTF-8
 VignetteBuilder: knitr
 Imports: 
-    magrittr,
     mapnhanespa
-Remotes: 
-  jhuwit/mapnhanespa
 LazyData: true
 Config/roxygen2/version: 8.0.0
 URL: https://github.com/jhuwit/actiquantiles, https://jhuwit.github.io/actiquantiles/
