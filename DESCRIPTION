@@ -22,7 +22,6 @@ Suggests:
     rmarkdown,
     dplyr
 Encoding: UTF-8
-VignetteBuilder: knitr
 Imports: 
     mapnhanespa
 LazyData: true
