@@ -70,6 +70,11 @@ mapnhanespa::nhanes_pa_quantile(
 #> [1] 0.5349443
 ```
 
+## Funding
+
+This work was supported by NIH grant P30AG021334 and the Johns Hopkins
+Older Americans Independence Center (OAIC) Pepper Center grant.
+
 # Package index
 
 ## All functions
