@@ -73,3 +73,7 @@ mapnhanespa::nhanes_pa_quantile(
   measure = "mims"
 )
 ```
+
+## Funding
+
+This work was supported by NIH grant P30AG021334 and the Johns Hopkins Older Americans Independence Center (OAIC) Pepper Center grant.
