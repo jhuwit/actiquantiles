@@ -16,7 +16,7 @@ License: GPL-3
 Depends: 
     R (>= 3.5)
 Suggests:
-    testthat,
+    testthat (>= 3.0.0),
     covr,
     knitr,
     rmarkdown,
@@ -24,6 +24,8 @@ Suggests:
 Encoding: UTF-8
 Imports: 
     mapnhanespa
+Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0
 URL: https://github.com/jhuwit/actiquantiles, https://jhuwit.github.io/actiquantiles/
 BugReports: https://github.com/jhuwit/actiquantiles/issues
+Config/testthat/edition: 3
