@@ -6,6 +6,8 @@
 [![R-CMD-check](https://github.com/jhuwit/actiquantiles/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jhuwit/actiquantiles/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/jhuwit/actiquantiles/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jhuwit/actiquantiles?branch=main)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/actiquantiles)](https://CRAN.R-project.org/package=actiquantiles)
 <!-- badges: end -->
 
 # actiquantiles
@@ -46,18 +48,18 @@ example_data <- data.frame(
 
 mapped <- acti_map_nhanes(example_data)
 mapped
-#>   id age    sex   measure value acti_pa_quantile
-#> 1  A  25 Female      mims 15000        0.5349443
-#> 2  B  62   Male ssl_steps  7500        0.3527381
+#>   id age    sex   measure value age_category_pa_map acti_pa_quantile
+#> 1  A  25 Female      mims 15000             [20,30)        0.5349443
+#> 2  B  62   Male ssl_steps  7500             [60,70)        0.3527381
 ```
 
 The wrapper keeps the input columns and adds `acti_pa_quantile`:
 
 ``` r
 head(mapped)
-#>   id age    sex   measure value acti_pa_quantile
-#> 1  A  25 Female      mims 15000        0.5349443
-#> 2  B  62   Male ssl_steps  7500        0.3527381
+#>   id age    sex   measure value age_category_pa_map acti_pa_quantile
+#> 1  A  25 Female      mims 15000             [20,30)        0.5349443
+#> 2  B  62   Male ssl_steps  7500             [60,70)        0.3527381
 ```
 
 For a single value, use the scalar helper from `mapnhanespa` directly:
