@@ -71,7 +71,7 @@ example_data <- data.frame(
 )
 
 acti_map_nhanes(example_data)
-#>   id age    sex   measure value acti_pa_quantile
-#> 1  1  25 Female      mims 15000        0.5349443
-#> 2  2  62   Male ssl_steps  7500        0.3527381
+#>   id age    sex   measure value age_category_pa_map acti_pa_quantile
+#> 1  1  25 Female      mims 15000             [20,30)        0.5349443
+#> 2  2  62   Male ssl_steps  7500             [60,70)        0.3527381
 ```

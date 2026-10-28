@@ -83,15 +83,15 @@
 <span></span>
 <span><span class="va">mapped</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/acti_map_nhanes.html">acti_map_nhanes</a></span><span class="op">(</span><span class="va">example_data</span><span class="op">)</span></span>
 <span><span class="va">mapped</span></span>
-<span><span class="co">#&gt;   id age    sex   measure value acti_pa_quantile</span></span>
-<span><span class="co">#&gt; 1  A  25 Female      mims 15000        0.5349443</span></span>
-<span><span class="co">#&gt; 2  B  62   Male ssl_steps  7500        0.3527381</span></span></code></pre></div>
+<span><span class="co">#&gt;   id age    sex   measure value age_category_pa_map acti_pa_quantile</span></span>
+<span><span class="co">#&gt; 1  A  25 Female      mims 15000             [20,30)        0.5349443</span></span>
+<span><span class="co">#&gt; 2  B  62   Male ssl_steps  7500             [60,70)        0.3527381</span></span></code></pre></div>
 <p>The wrapper keeps the input columns and adds <code>acti_pa_quantile</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">mapped</span><span class="op">)</span></span>
-<span><span class="co">#&gt;   id age    sex   measure value acti_pa_quantile</span></span>
-<span><span class="co">#&gt; 1  A  25 Female      mims 15000        0.5349443</span></span>
-<span><span class="co">#&gt; 2  B  62   Male ssl_steps  7500        0.3527381</span></span></code></pre></div>
+<span><span class="co">#&gt;   id age    sex   measure value age_category_pa_map acti_pa_quantile</span></span>
+<span><span class="co">#&gt; 1  A  25 Female      mims 15000             [20,30)        0.5349443</span></span>
+<span><span class="co">#&gt; 2  B  62   Male ssl_steps  7500             [60,70)        0.3527381</span></span></code></pre></div>
 <p>For a single value, use the scalar helper from <code>mapnhanespa</code> directly:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">mapnhanespa</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/mapnhanespa/man/nhanes_pa_quantile.html" class="external-link">nhanes_pa_quantile</a></span><span class="op">(</span></span>
@@ -145,6 +145,7 @@
 <ul class="list-unstyled">
 <li><a href="https://github.com/jhuwit/actiquantiles/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/jhuwit/actiquantiles/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/jhuwit/actiquantiles?branch=main" class="external-link"><img src="https://codecov.io/gh/jhuwit/actiquantiles/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://CRAN.R-project.org/package=actiquantiles" class="external-link"><img src="https://www.r-pkg.org/badges/version/actiquantiles" alt="CRAN status"></a></li>
 </ul>
 </div>
 
